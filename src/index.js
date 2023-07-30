@@ -9,6 +9,8 @@ import empledoRoutes from './routes/empleados.routes.js';
 /**se importa el, router */
 import indexRoutes from './routes/index.routes.js';
 
+/**para que sea visible los datos enviados desde el cliente */
+app.use(express.json());
 
 /**utilizacion */
 app.use(indexRoutes);
